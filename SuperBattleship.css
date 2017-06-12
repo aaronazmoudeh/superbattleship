@@ -1,0 +1,85 @@
+h2 {
+    color: red;
+}
+
+h3 {
+    color: blue;
+}
+
+
+#map_div {
+    float: left;
+    width: 60%;
+}
+
+#command_div {
+    float: right;
+    width: 40%;
+}
+
+#move_buttons {
+    margin: 10px;
+}
+
+#rotate_buttons {
+    margin: 10px;
+}
+
+#fleet_info {
+    margin: 10px;
+}
+
+.invisible {
+    background-color: darkblue;
+}
+
+.player1 {
+    background-color: gray;
+}
+
+.player2 {
+    background-color: sandybrown;
+}
+
+.empty {
+    background-color: aquamarine;
+}
+
+.hit {
+    background-color: red
+}
+
+#map_view {
+    border: thick;
+    border-color: black;
+}
+
+table {
+    border: thin;
+    border-color: black;
+}
+
+td {
+    border: thin;
+    border-color: black;
+    height: 8px;
+    width: 9px;
+}
+
+#output {
+    overflow: scroll;
+    height: 400px;
+    width: 400px;
+    float: left;
+}
+
+#list {
+    margin: -10px;
+    font-size: 13pt;
+}
+
+#list2 {
+    margin: -10px;
+    height: 135px;
+    font-size: 13pt;
+}

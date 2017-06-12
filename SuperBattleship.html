@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Super Battleship</title>
+    <script src="http://www.cs.unc.edu/Courses/comp426-f16/jquery-3.1.0.js"></script>
+    <script src="SBConstants.js"></script>
+    <script src="SuperBattleship.js"></script>
+    <script src="GamePlayer.js"></script>
+    <script src="DumbAI.js"></script>
+    <script src="OnePlayerSuperBattleship.js"></script>
+    <link rel="stylesheet" type="text/css" href="SuperBattleship.css">
+    </head>
+    
+    <body>
+        <div id ="map_div">
+            <h2>Super Battleship</h2>
+            <table id="map_view">
+            </table>
+        </div>
+        <div id ="command_div">
+            <h3>Player 1</h3>
+            <div id="command_view">
+                <div id="shoot view">
+                <ul id="list">TO SHOOT, YOU CAN EITHER:
+                    <li>Click a square on the board, or</li>
+                    <li>Type in coordinates below and click the "ShootAt" button</li>
+                    </ul>
+                <br>X and Y coordinates of the board which you would like to shoot at:
+                <input type="input" id="CLI">
+                <button type="button" id="shootAt">ShootAt</button>
+                </div>
+                <div id="ship_select">
+                    <br>Ship you want to move or rotate:
+                 <form id ="your_ship" action="">
+                    <input type="radio" name="ship" value="Battleship" checked>Battleship<br>
+                    <input type="radio" name="ship" value="Carrier">Carrier<br>
+                    <input type="radio" name="ship" value="Cruiser">Cruiser<br>
+                    <input type="radio" name="ship" value="Destroyer">Destroyer<br>
+                    <input type="radio" name="ship" value="Submarine">Submarine
+                 </form> 
+                </div>
+                <div id="move_buttons">
+                    <ul id="list2">TO MOVE OR ROTATE YOUR SHIP, YOU CAN EITHER:
+                        <li>Use the UP and DOWN arrows on your keyboard to move the selected ship forward and backward, and use your RIGHT and LEFT arrows to rotate the selected ship clockwise and counter-clockwise, respectively</li>
+                        <li>Select the ship you wish to move or rotate and click the buttons associated with each action</li>
+                    </ul>
+                 <button type="button" id="move_backward">Move Backward</button>
+                 <button type="button" id="move_forward">Move Forward</button>
+                </div>
+                <div id="rotate_buttons">
+                 <button type="button" id="rotate_cw">Rotate Clockwise</button>
+                 <button type="button" id="rotate_ccw">Rotate Counter-Clockwise</button>
+                </div>
+                <div id="fleet_info">
+                 <button type="button" id="fleet">Get Fleet Info</button>
+                </div>
+                <p>Game Log:</p>
+                <div id="output">
+                </div>
+            </div>
+        </div></body>
+    
+</html>
